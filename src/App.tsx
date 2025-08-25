@@ -110,7 +110,7 @@ function App() {
       github: 'https://github.com/BimsaraImash/MernApp.git'
     },
     {
-      title: 'Petcart - Online Pet Selling Platform',
+      title: 'PetKart - Online Pet Selling Platform',
       description: 'A platform for buying and selling pets with easy listing management and pet care info.',
       image: '/img/petcart.png',
       tech: ['React', 'mongoDB', 'Spring-Boot', 'Tailwind CSS'],

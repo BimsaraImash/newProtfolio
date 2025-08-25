@@ -27,6 +27,13 @@ import { Typewriter } from "react-simple-typewriter";
 
 function App() {
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // keep your resume in public folder
+    link.download = "NOVA_Resume.pdf";
+    link.click();
+  };
+
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   const scrollStrip = (dir: 'left' | 'right') => {
@@ -230,7 +237,10 @@ function App() {
           View My Work
           <ArrowRight size={20} className="ml-2" />
         </button>
-        <button className="inline-flex items-center px-8 py-3 border-2 border-gray-600 text-gray-300 font-medium rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-200">
+        <button
+          onClick={handleDownload}
+          className="inline-flex items-center px-8 py-3 border-2 border-gray-600 text-gray-300 font-medium rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-200"
+        >
           <Download size={20} className="mr-2" />
           Download Resume
         </button>

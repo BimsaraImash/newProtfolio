@@ -524,7 +524,7 @@ function App() {
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-black border border-gray-700 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                    placeholder="john@example.com"
+                    placeholder="bimsa@example.com"
                   />
                 </div>
               </div>

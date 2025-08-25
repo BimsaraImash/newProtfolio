@@ -30,7 +30,7 @@ function App() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf"; // keep your resume in public folder
-    link.download = "NOVA_Resume.pdf";
+    link.download = "BimsaraImash_Resume.pdf";
     link.click();
   };
 
